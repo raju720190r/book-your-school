@@ -33,7 +33,7 @@ const SignUP = () => {
             email: data.email,
             photoURL: data.photoURL,
           };
-          fetch("http://localhost:5000/users", {
+          fetch("https://book-your-collage-server.vercel.app/users", {
             method: "POST",
             headers: {
               "content-type": "application/json",
@@ -59,7 +59,8 @@ const SignUP = () => {
       <div className="hero min-h-screen  ">
         <form
           className="card-body     w-2/4  rounded-xl bg-gray-200 bg-cover bg-center"
-          onSubmit={handleSubmit(onSubmit)}>
+          onSubmit={handleSubmit(onSubmit)}
+        >
           <div className="form-control ">
             <h2 className="text-2xl font-bold text-center text-4xl rounded-b-xl">
               Please SignUp

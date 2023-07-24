@@ -4,7 +4,7 @@ const useAdmissionList = () => {
   const [admissionlist, setAdmissionList] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/admission")
+    fetch("https://book-your-collage-server.vercel.app/admission")
       .then((res) => res.json())
       .then((data) => {
         setAdmissionList(data);

@@ -41,7 +41,7 @@ const Profile = () => {
     // Call an API or update the database with the edited data
     // ...
     const userId = id; // Assuming you have access to the user ID
-    const apiUrl = `http://localhost:5000/users/${userId}`; // Assuming your API URL for updating users
+    const apiUrl = `https://book-your-collage-server.vercel.app/users/${userId}`; // Assuming your API URL for updating users
     const updatedUserData = { name, email, university, address };
 
     fetch(apiUrl, {

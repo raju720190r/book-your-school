@@ -47,7 +47,7 @@ const Admission = () => {
 
     const newformData = formData;
 
-    fetch("http://localhost:5000/admission", {
+    fetch("https://book-your-collage-server.vercel.app/admission", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -115,91 +115,88 @@ const Admission = () => {
                 </span>
               </h2>
 
-              
-                <div className="input-container my-2">
-                  <label htmlFor="candidateName">Candidate Name:</label>
-                  <input
-                    type="text"
-                    placeholder="Candidate Name"
-                    name="candidateName"
-                    value={formData.candidateName}
-                    onChange={handleChange}
-                    className="input input-bordered input-info w-full"
-                  />
-                </div>
+              <div className="input-container my-2">
+                <label htmlFor="candidateName">Candidate Name:</label>
+                <input
+                  type="text"
+                  placeholder="Candidate Name"
+                  name="candidateName"
+                  value={formData.candidateName}
+                  onChange={handleChange}
+                  className="input input-bordered input-info w-full"
+                />
+              </div>
 
-                <div className="input-container">
-                  <label htmlFor="subject">Subject:</label>
-                  <input
-                    type="text"
-                    placeholder="Subject"
-                    name="subject"
-                    value={formData.subject}
-                    onChange={handleChange}
-                    className="input input-bordered input-info w-full"
-                  />
-                </div>
+              <div className="input-container">
+                <label htmlFor="subject">Subject:</label>
+                <input
+                  type="text"
+                  placeholder="Subject"
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleChange}
+                  className="input input-bordered input-info w-full"
+                />
+              </div>
 
-                <div className="input-container my-2">
-                  <label htmlFor="candidateEmail">Candidate Email:</label>
-                  <input
-                    type="email"
-                    placeholder="Candidate Email"
-                    name="candidateEmail"
-                    value={formData.candidateEmail}
-                    readOnly
-                    className="input input-bordered input-info w-full max-w-xs "
-                  />
-                </div>
+              <div className="input-container my-2">
+                <label htmlFor="candidateEmail">Candidate Email:</label>
+                <input
+                  type="email"
+                  placeholder="Candidate Email"
+                  name="candidateEmail"
+                  value={formData.candidateEmail}
+                  readOnly
+                  className="input input-bordered input-info w-full max-w-xs "
+                />
+              </div>
 
-                <div className="input-container my-2">
-                  <label htmlFor="candidatePhone">
-                    Candidate Phone Number:
-                  </label>
-                  <input
-                    type="tel"
-                    placeholder="Candidate Phone Number"
-                    name="candidatePhone"
-                    value={formData.candidatePhone}
-                    onChange={handleChange}
-                    className="input input-bordered input-info w-full max-w-xs"
-                  />
-                </div>
+              <div className="input-container my-2">
+                <label htmlFor="candidatePhone">Candidate Phone Number:</label>
+                <input
+                  type="tel"
+                  placeholder="Candidate Phone Number"
+                  name="candidatePhone"
+                  value={formData.candidatePhone}
+                  onChange={handleChange}
+                  className="input input-bordered input-info w-full max-w-xs"
+                />
+              </div>
 
-                <div className="input-container  my-2">
-                  <label htmlFor="address">Address:</label>
-                  <input
-                    type="text"
-                    placeholder="Address"
-                    name="address"
-                    value={formData.address}
-                    onChange={handleChange}
-                    className="input input-bordered input-info w-full max-w-xs"
-                  />
-                </div>
+              <div className="input-container  my-2">
+                <label htmlFor="address">Address:</label>
+                <input
+                  type="text"
+                  placeholder="Address"
+                  name="address"
+                  value={formData.address}
+                  onChange={handleChange}
+                  className="input input-bordered input-info w-full max-w-xs"
+                />
+              </div>
 
-                <div className="input-container  my-2">
-                  <label htmlFor="dateOfBirth">Date of Birth:</label>
-                  <input
-                    type="date"
-                    name="dateOfBirth"
-                    value={formData.dateOfBirth}
-                    onChange={handleChange}
-                    className="input input-bordered input-info w-full max-w-xs"
-                  />
-                </div>
+              <div className="input-container  my-2">
+                <label htmlFor="dateOfBirth">Date of Birth:</label>
+                <input
+                  type="date"
+                  name="dateOfBirth"
+                  value={formData.dateOfBirth}
+                  onChange={handleChange}
+                  className="input input-bordered input-info w-full max-w-xs"
+                />
+              </div>
 
-                <div className="input-container my-2">
-                  <label htmlFor="image">Image link:</label>
-                  <input
-                    type="text"
-                    name="image"
-                    placeholder="Image link"
-                    value={formData.image}
-                    onChange={handleChange}
-                    className="input input-bordered input-info w-full max-w-xs "
-                  />
-                </div>
+              <div className="input-container my-2">
+                <label htmlFor="image">Image link:</label>
+                <input
+                  type="text"
+                  name="image"
+                  placeholder="Image link"
+                  value={formData.image}
+                  onChange={handleChange}
+                  className="input input-bordered input-info w-full max-w-xs "
+                />
+              </div>
 
               <button className="btn bg-blue-400" type="submit">
                 Submit

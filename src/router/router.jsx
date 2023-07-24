@@ -58,7 +58,9 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/colleges/${params.id}`),
+          fetch(
+            `https://book-your-collage-server.vercel.app/colleges/${params.id}`
+          ),
       },
     ],
   },

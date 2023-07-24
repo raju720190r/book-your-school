@@ -4,7 +4,7 @@ const UseColleges = () => {
   const [colleges, setColleges] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/colleges")
+    fetch("https://book-your-collage-server.vercel.app/colleges")
       .then((res) => res.json())
       .then((data) => {
         setColleges(data);

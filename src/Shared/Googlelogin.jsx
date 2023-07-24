@@ -20,7 +20,7 @@ const GoogleLogin = () => {
         email: loggedUser.email,
         photoURL: loggedUser.photoURL,
       };
-      fetch("http://localhost:5000/users", {
+      fetch("https://book-your-collage-server.vercel.app/users", {
         method: "POST",
         headers: {
           "content-type": "application/json",
@@ -45,7 +45,7 @@ const GoogleLogin = () => {
         email: loggedUser.email,
         photoURL: loggedUser.photoURL,
       };
-      fetch("http://localhost:5000/users", {
+      fetch("https://book-your-collage-server.vercel.app/users", {
         method: "POST",
         headers: {
           "content-type": "application/json",
@@ -62,7 +62,6 @@ const GoogleLogin = () => {
   };
   return (
     <div className="form-control flex justify-center items-center">
-      
       <p className="flex justify-around">
         <FcGoogle className="p-2 text-5xl btn  btn-2xl" onClick={googleLogIn} />
       </p>
